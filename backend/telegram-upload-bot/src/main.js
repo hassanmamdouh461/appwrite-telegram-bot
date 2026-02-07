@@ -20,7 +20,12 @@ const databases = new Databases(client);
 
 export default async ({ req, res, log, error }) => {
   try {
-    // Only process POST requests (Webhooks)
+    // Handle GET requests (Browser verification)
+    if (req.method === 'GET') {
+      return res.send('🤖 Telegram Bot Function is Active!');
+    }
+
+    // Only process POST requests (Webhooks) from this point check
     if (req.method !== 'POST') {
       return res.send('Method not allowed', 405);
     }
