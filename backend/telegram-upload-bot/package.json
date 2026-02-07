@@ -1,0 +1,14 @@
+{
+  "name": "telegram-appwrite-bot",
+  "version": "1.0.0",
+  "description": "Appwrite Function to upload Telegram files to Appwrite Storage",
+  "main": "src/main.js",
+  "type": "module",
+  "dependencies": {
+    "node-appwrite": "^14.0.0",
+    "axios": "^1.7.9"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
