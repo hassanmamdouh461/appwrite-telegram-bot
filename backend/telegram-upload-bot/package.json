@@ -5,10 +5,13 @@
   "main": "src/main.js",
   "type": "module",
   "dependencies": {
-    "node-appwrite": "^14.0.0",
-    "axios": "^1.7.9"
+    "axios": "^1.7.9",
+    "node-appwrite": "^14.0.0"
   },
   "engines": {
     "node": ">=18.0.0"
+  },
+  "devDependencies": {
+    "dotenv": "^17.2.4"
   }
 }
